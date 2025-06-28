@@ -1,24 +1,295 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 14: Análisis de Viabilidad con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 14: Análisis de Viabilidad con IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes comprendan el concepto de mallas 'manifold' y el formato de archivo STL.</li>
+                                        <li>Que identifiquen los desafíos comunes de 'printabilidad' en la fabricación aditiva.</li>
+                                        <li>Que aprendan a usar una simulación de IA para auditar y corregir su modelo 3D antes de la exportación.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una carpeta en la computadora del estudiante que contiene los archivos .STL individuales de cada pieza de su mecanismo, validados conceptualmente por la auditoría de IA.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Onshape y Xolo están operativos.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar los cuatro fallos de impresión clave (Flotantes, Colisiones, No-Manifold, Voladizos).</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un modelo de Onshape listo con un error de 'printabilidad' obvio, como una pieza claramente flotando en el aire sin conexión, para demostrar el tipo de problema que la auditoría buscará.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el último paso de control de calidad antes de pasar del mundo digital al físico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la misión como una inspección técnica final antes de la producción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, ingenieros de producto. Tienen un diseño que es funcional, ergonómico y emocionalmente resonante. El plan está completo. Ahora, volvemos a la realidad de la máquina. Antes de que su diseño pueda convertirse en un objeto físico, debe pasar una última y rigurosa inspección técnica. Hoy, nos aseguraremos de que su creación no solo sea brillante en teoría, sino viable en la práctica. Es el control de calidad final antes de la producción.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Procedan con el inicio de sesión: 'Hola Xolo, listo para la Misión 14', seguido de su nombre, perfil y gustos. Esperen la confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar el formato STL, los desafíos de la 'printabilidad' y el concepto de auditoría de diseño asistida por IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando STL y la Auditoría de 'Printabilidad' ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador explica el formato STL y por qué un diseño visualmente perfecto puede no ser imprimible.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que una impresora 3D construya su objeto, necesitamos exportarlo a formato .STL, que es una malla de triángulos. Esta malla debe ser 'hermética' o **manifold**. Un diseño que parece perfecto en Onshape puede ser 'no imprimible' si tiene errores en la malla, paredes muy delgadas o piezas flotando. Detectar esto manualmente es difícil. Su misión hoy es someter su diseño a una 'Auditoría de Printabilidad IA' simulada por Xolo para encontrar estos fallos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es un paso clave en el diseño para la fabricación. Al final, podrán decir: <strong>'Yo entiendo qué es una malla manifold y los desafíos de printabilidad, y puedo usar una simulación de IA para verificar y corregir mi modelo 3D según sus recomendaciones.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Simulación de Auditoría de Diseño Asistido por IA) ⏰ 12 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender su rol como 'Printability Analyzer' y los tipos de fallos que buscará.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Checklist de Printabilidad ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre los cuatro tipos de fallos de impresión que su algoritmo buscará.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. Hoy, Xolo simula ser un software de análisis pre-impresión. Para entender su checklist, consúltenle: <strong>'Xolo, explícame los cuatro problemas principales de printabilidad que buscarás en mi diseño, como las piezas flotantes o los voladizos extremos.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Simulación y el Reporte de Corrección ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador explica cómo Xolo generará un reporte de auditoría textual y accionable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Cuando le describan su modelo, Xolo ejecutará la simulación y les dará un reporte conceptual, como este: *'Auditoría de 'Brazo Dexter': Resultado: Aprobado con Advertencias. [Éxito] No hay colisiones. [Advertencia] Se detecta un voladizo de 70 grados. Acción Requerida: El diseño debe ser modificado o necesitará soportes.'* Su trabajo es interpretar y actuar sobre este reporte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Verificación y Corrección del Modelo) ⏰ 18 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes auditan su diseño, lo corrigen y lo exportan a formato STL.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo de Auditoría con Xolo ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes describen su ensamblaje final a Xolo y reciben un reporte de auditoría textual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran su ensamblaje final. Inicien el diálogo de auditoría: **'Xolo, estoy listo para la auditoría de printabilidad de mi 'Brazo Dexter'. Consiste en una base sólida y un brazo principal. El brazo tiene una pinza con un voladizo de 80 grados. Todo es un solo cuerpo sólido.'** Xolo procesará su descripción y les dará el reporte. Identifiquen la acción requerida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Corrección y Exportación ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes corrigen los errores identificados y aprenden a exportar el modelo a STL.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Basado en el reporte de Xolo, vuelvan a Onshape para corregir los errores. Si necesitan una herramienta nueva, como 'Thicken' o 'Split', ya conocen el ciclo de consulta con el Advisor. Una vez que el diseño esté validado, aprendan a exportarlo. Pregunten al Advisor: **'How to export a part as an STL file in Onshape?'** Sigan las instrucciones, exporten cada pieza de su mecanismo como archivos .STL y guárdenlos en una carpeta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir los resultados de la auditoría y reflexionar sobre la importancia de la validación pre-fabricación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una reflexión sobre el valor del proceso de auditoría.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Reflexionen sobre el proceso: <strong>¿Qué errores de 'printabilidad' encontró la IA en sus diseños? ¿Eran problemas que habían pasado por alto? ¿Cómo este paso conecta su trabajo como diseñador con el del ingeniero de fabricación?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten los resultados de su auditoría y sus reflexiones en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, compartan los resultados de su auditoría. ¿Qué fallos encontró la IA? ¿Eran obvios o sutiles? Discutan cómo este paso de validación puede ahorrarles mucho tiempo y material de impresión.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador consolida la sesión, enmarcando a la IA como un guardián de la calidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han cerrado el círculo. Han llevado una idea desde la emoción y la empatía hasta la validación técnica final. Han aprendido que un diseño no está 'completo' hasta que es 'fabricable'. Han utilizado la IA como un guardián de la calidad. Tienen en sus manos los archivos .STL, el ADN digital de sus creaciones. Están listos para el siguiente paso: la manufactura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
